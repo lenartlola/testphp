@@ -111,12 +111,19 @@ function part_five() {
 	echo "26: i(10) / 0".$i."\n";
 }
 
+function part_six() {
+	echo "++++++++++++++++++++++++ Part five ++++++++++++++++++++++++\n";
+	$cantons = array("GE", "VD", "VS");
+	echo "27: 2nd in canton array = ".$cantons[1]."\n";
+}
+
 function main() {
 	part_one();
 	part_two();
 	part_three();
 	part_four();
 	part_five();
+	part_six();
 }
 
 main()
