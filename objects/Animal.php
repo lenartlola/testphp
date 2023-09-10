@@ -1,6 +1,16 @@
 <?php
 
-Class Animal {
+// Class Animal {
+//     public function marcher() {
+//         $steps = 0;
+//         while (true) {
+//             echo "Je marche\n";
+//             $steps++;
+//         }
+//     }
+// }
+
+trait Marcher {
     public function marcher() {
         $steps = 0;
         while (true) {
@@ -20,11 +30,16 @@ trait Nageur {
     }
 }
 
-class Chat extends Animal {
-
+class Chat {
+    use Marcher;
 }
 
-class Canard extends Animal {
+class Canard {
+    use Marcher;
+    use Nageur;
+}
+
+class Poisson {
     use Nageur;
 }
 
