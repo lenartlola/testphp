@@ -1,0 +1,22 @@
+
+class Human {
+    // This is a class
+}
+
+// https://www.php.net/manual/en/language.oop5.inheritance.php
+
+class Homme extends Human {
+    // This is a class that inherits from Human, it inherits all the attributes and methods of Human
+}
+
+class Femme extends Human {
+    // This is a class that inherits from Human, it inherits all the attributes and methods of Human
+}
+
+We would do inheritance if we want to have a class that is a more specific version of another class,
+for example, Homme and Femme are both Humans, but they have different attributes and methods.
+Another reason to do inheritance is to avoid code duplication, for example, if we have a class
+Human with a method walk(), and we want to create a class Homme and a class Femme, we would
+have to write the method walk() in both classes, but if we do inheritance, we can just write the
+method walk() in the class Human, and the classes Homme and Femme will inherit the method walk()
+from the class Human.
